@@ -53,9 +53,16 @@
             //<![CDATA[       
             jQuery.extend(Qubit, {"relativeUrlRoot":""});
             //]]>
-
+         
+}
         </script>
         <style> 
+  .facet.open .facet-header a::after {
+
+content: "\f106";
+color: #000;
+
+}
         .advanced-search-toggle:hover {
     background-color: #F5F5F5;
     color: #333;
@@ -96,22 +103,7 @@ a {
     padding-right: 3px;
     color: #999;
 }     
-  .fa {
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-feature-settings: normal;
-    font-language-override: normal;
-    font-kerning: auto;
-    font-synthesis: weight style;
-    font-variant: normal;
-    font-size: inherit;
-    text-rendering: auto;
-}
+
         button.clipboard {
     position: absolute;
     right: 0px;
@@ -192,22 +184,7 @@ a {
     padding-right: 3px;
     color: #000;
 }
-.fa {
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-feature-settings: normal;
-    font-language-override: normal;
-    font-kerning: auto;
-    font-synthesis: weight style;
-    font-variant: normal;
-    font-size: inherit;
-    text-rendering: auto;
-}
+
 </style>
 
 
@@ -396,12 +373,13 @@ a {
 
                     <div class="facet-header">
                         <h3>
-                            <a aria-expanded="true" href="#">
-
+                            <a >
+                                    
                                 Assunto
 
-                              
+                             
                             </a>
+                            
                         </h3>
                     </div>
                     <div id="#facet-subjects" class="facet-body">
@@ -624,7 +602,7 @@ a {
             
         </section>
         <section class="advanced-search-section">
-            <a class="advanced-search-toggle " aria-expanded="false" href="#">
+            <a class="advanced-search-toggle " >
 
  
 
@@ -1185,7 +1163,8 @@ a {
                             </section>
                             <section class="browse-options">
                                 <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse?sort=alphabetic&media=print">
-                                    <i class="fa fa-print">
+                                  
+                                    <i class="icon-print">
                                     
                                     </i>
 
