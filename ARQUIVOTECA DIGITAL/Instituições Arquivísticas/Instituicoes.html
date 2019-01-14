@@ -57,20 +57,53 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
 h1, h2, h4, h5, h6, .sidebar-widget>div, #action-icons i, #action-icons a, #action-icons a:hover i, #left-column a, #right-column a, .breadcrumb a, .breadcrumb span, #sort-header label, #sort-header .dropdown-selected:after, #facets .facet-header p, #facets .facet-header p:after, #facets .facet-header p:hover, #facets .open .facet-header p, #facets .open .facet-header p:after, #facets .facet-body li a, .nav-pills a, .nav-pills .active a, .result-count, #sort-header .dropdown-selected span, #sidebar li a, #context-menu li a, #advanced-search-filters, #context-menu a, #context-menu #primary-contact, #context-menu #opening-times, #context-menu #physical-objects, .list-menu .more a {
     color: #222222;
 }
-.facet.open .facet-header a::after{
-    content: "\f106";
-    color: #f7efef;
-}
+
 .facet.open .facet-header a {
-    background-color: #3b72b5;
+    background-color: #7ba8fb;
     color: #fff;
    
 }
 h3{
-    color: #fff;
+    color: #000;
+}
+h1, #context-menu h4, #facets .content h3 {
+    text-shadow: 1px 1px 1px rgb(16, 245, 213);
+}
+.search-filter, #action-icons a:hover, #facets .open .facet-body, #facets .facet-header p, #facets .facet.open .facet-header p, #facets .facet-header p:hover {
+    background-color: rgba(169, 172, 179, 0.72);
+}
+.pagination ul>li>a:hover, .pagination ul>.active>a, .pagination ul>.active>span, .sidebar-widget a, #facets .facet-body li.active a, #facets .facet-header p:hover:after {
+    color: #1b00fd;
 }
 
+.advanced-search-toggle:after {
+    padding: 0 10px 0 10px;
+    font-variant: normal;
+    font-size: 15px;
 
+    font-family: "FontAwesome";
+}
+body {
+    margin: 0;
+    font-family: "Open Sans Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333;
+    background-color: #d4d4d4;
+}
+.facet .facet-header a {
+    text-decoration: none;
+    display: block;
+    padding: 4px 30px 6px 6px;
+    color: #657aa9;
+}
+.advanced-search-toggle:before, .advanced-search-toggle:after {
+    padding: 5px 9px 0 10px;
+    font-variant: normal;
+    font-size: 15px;
+   
+    font-family: "FontAwesome";
+}
 </style>
 
   <body >
@@ -218,10 +251,13 @@ h3{
       <h2>Limite seus resultados por:</h2>
 
       
-      <section class="facet open ">
+      <section class="facet">
   
     <div class="facet-header  ">
-             <a> <h3 href="#" aria-expanded="true">Idioma</h3></a>
+             <a > <h3 >Idioma</h3>
+          
+            </a>
+            
           </div>
 
     <div class="facet-body" id="#facet-languages">
@@ -249,7 +285,7 @@ h3{
       <section class="facet open">
   
     <div class="facet-header">
-              <h3><a href="#" aria-expanded="true">Tipo de arquivo</a></h3>
+             <a href="#" aria-expanded="true"> <h3>Tipo de arquivo</h3> </a>
           </div>
 
     <div class="facet-body" id="#facet-archivetype">
@@ -278,10 +314,10 @@ h3{
       
       
       
-      <section class="facet open">
+      <section class="facet">
   
     <div class="facet-header">
-              <h3><a href="#" aria-expanded="true">Área Temática</a></h3>
+      <a > <h3 href="#" aria-expanded="true">Área Temática</h3></a>
           </div>
 
     <div class="facet-body" id="#facet-thematicarea">
@@ -399,8 +435,8 @@ h3{
     </div>
 
     <section class="advanced-search-section">
-      <a href="#" id="toggle-advanced-filters" class="advanced-search-toggle fa-angle-double-down">Opções de pesquisa avançada</a>
-      <div id="advanced-repository-filters" class="advanced-search" style="display: none;">
+      <a href="#" id="toggle-advanced-filters" class="advanced-search-toggle">Opções de pesquisa avançada</a>
+      <div id="advanced-repository-filters" class="advanced-search" >
         <form method="get">
 
   
