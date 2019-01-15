@@ -43,12 +43,22 @@
     //]]>
     </script></head>
     <style>
-    .icon {
-    padding: 0 10px 0 10px;
-    font-variant: normal;
-    font-size: 15px;
-    content: "\f103" !important;
-    font-family: "FontAwesome";
+.advanced-search-toggle{
+
+padding: 0 10px 0 10px;
+font-variant: normal;
+font-size: 15px;
+
+
+}
+h1, h2, h3, h4, h5, h6, .sidebar-widget > div, #action-icons i, #action-icons a, #action-icons a:hover i, #left-column a, #right-column a, .breadcrumb a, .breadcrumb span, #sort-header label, #sort-header .dropdown-selected::after, #facets .facet-header p, #facets .facet-header p::after, #facets .facet-header p:hover, #facets .open .facet-header p, #facets .open .facet-header p::after, #facets .facet-body li a, .nav-pills a, .nav-pills .active a, .result-count, #sort-header .dropdown-selected span, #sidebar li a, #context-menu li a, #advanced-search-filters, #context-menu a, #context-menu #primary-contact, #context-menu #opening-times, #context-menu #physical-objects, .list-menu .more a {
+
+color: #0e0d0d;
+
+}
+.fa-angle-double-down::before {
+padding-bottom: 30%;
+backgroud-color: #0000;
 }
     </style>
       <body class="yui-skin-sam repository browse jquery-once-1-processed">
@@ -295,7 +305,7 @@
         </div>
     
         <section class="advanced-search-section">
-          <a href="#" id="toggle-advanced-filters" class="advanced-search-toggle ">Opções de pesquisa avançada</a>
+          <h5 text-align="center" href="#" id="toggle-advanced-filters" class=" fa-angle-double-down"href="#">Opções de pesquisa avançada</h5>
           <div id="advanced-repository-filters" class="advanced-search">
             <form method="get">
     
