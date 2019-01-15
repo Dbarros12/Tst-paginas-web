@@ -7,8 +7,9 @@
     <title>Arquivoteca Digital do TST</title>
 
 
-    <link rel="stylesheet" href="https://arquivoteca.tst.jus.br/plugins/arDominionPlugin/vendor/fonts/font-awesome/css/font-awesome.css">
-
+    
+<!--BIBLIOTECA FONT-AWESOME-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="https://arquivoteca.tst.jus.br/favicon.ico">
     <link media="all" href="https://arquivoteca.tst.jus.br/plugins/arTstPlugin/css/min.css" rel="stylesheet" type="text/css">
@@ -36,270 +37,248 @@
 <script src="https://arquivoteca.tst.jus.br/js/dominion.js" type="text/javascript"></script>
 
 
-<script src="https://arquivoteca.tst.jus.br/plugins/arDominionPlugin/vendor/fonts/font-awesome/css/font-awesome.css" type="text/javascript"></script>
-  <script type="text/javascript">
-
-
+<script type="text/javascript">
 //<![CDATA[
 jQuery.extend(Qubit, {"relativeUrlRoot":""});
 //]]>
-</script>
+</script></head>
+<body class="yui-skin-sam function browse jquery-once-1-processed">
 
-<script>
-.fa-th-large::before {
-	content: "\f009";
-}
-.advanced-search-toggle::before, .advanced-search-toggle::after {
-
-padding: 0 10px 0 10px;
-font-variant: normal;
-font-size: 15px;
-content: "\f103" !important;
-font-family: "FontAwesome";
-
-}
-</script>
-
-
-
-</head>
-  <body class="yui-skin-sam function browse jquery-once-1-processed">
-
-    
+  
 
 
 <div id="header">
-  <div class="container">
+<div class="container">
 
-    <div id="header-lvl1">
-      <div class="row">
-        <div class="span12">
-
-          <ul id="header-nav" class="nav nav-pills">
-
-      		<li><a href="/" title="Início">Início</a></li>
-
-                                          <li><a href="https://arquivoteca.tst.jus.br/index.php/function/browse?sf_culture=en&amp;limit=10&amp;sort=alphabetic" title="English">English</a></li>
-                
-                          <li><a href="/index.php/user/login" title="Entrar">Entrar</a></li>
-            
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-    <div id="header-lvl2">
-      <div class="row">
-
-        <div id="logo-and-name" class="span6">
-            <h1><a rel="home" href="http://arquivoteca.tst.jus.br" title=""><img alt="TST" src="https://arquivoteca.tst.jus.br/plugins/arTstPlugin/images/logo.png"></a></h1>
-        </div>
-
-        <div id="header-search" class="span6">
-          <div id="search-form-wrapper">
-
-  <form action="/index.php/informationobject/browse" data-autocomplete="/index.php/search/autocomplete">
-
-    <input type="hidden" name="topLod" value="0">
-
-    <div class="input-append">
-
-              <input type="text" name="query" value="" placeholder="Pesquisar">
-      
-      <div class="btn-group">
-        <button class="btn dropdown-toggle" data-toggle="dropdown">
-          <span class="caret"></span>
-        </button>
-                          <ul class="dropdown-menu pull-right">
-                                                                  <li>
-                  <a href="/index.php/informationobject/browse">
-                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-archival.png">                                        Descrições arquivísticas                  </a>
-                </li>
-                              <li>
-                  <a href="/index.php/actor/browse">
-                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-people.png">                                        Registros de autoridade                  </a>
-                </li>
-                              <li>
-                  <a href="/index.php/repository/browse">
-                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-institutions.png">                                        Instituições arquivísticas                  </a>
-                </li>
-                              <li>
-                  <a href="/index.php/function/browse">
-                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-functions.png">                                        Funções                  </a>
-                </li>
-                              <li>
-                  <a href="/index.php/taxonomy/browse/id/35">
-                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-subjects.png">                                        Assuntos                  </a>
-                </li>
-                              <li>
-                  <a href="/index.php/taxonomy/browse/id/42">
-                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-places.png">                                        Locais                  </a>
-                </li>
-                              <li>
-                  <a href="/index.php/digitalobject/browse">
-                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-media.png">                                        Objetos digitais                  </a>
-                </li>
-                                      <li class="divider"></li>
-            <li class="advanced-search">
-              <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse?showAdvanced=1&amp;topLod=0">
-                <i class="icon-zoom-in"></i>
-                Pesquisa avançada              </a>
-            </li>
-          </ul>
-                </div>
-
-    </div>
-
-    <div id="search-realm" class="search-popover">
-
-      
-        <div>
-          <label>
-                          <input name="repos" type="radio" value="" checked="checked" data-placeholder="Pesquisar">
-                        Pesquisa global          </label>
-        </div>
-
-        
-        
-      
-      <div class="search-realm-advanced">
-        <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse?showAdvanced=1&amp;topLod=0">
-          Pesquisa avançada&nbsp;»
-        </a>
-      </div>
-
-    </div>
-
-  </form>
-
-</div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-    
-    <div id="wrapper" class="container" role="main">
-
-      
-
-        <div class="multiline-header">
-    <img alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-functions.png">    <h1 aria-describedby="results-label">Mostrando 0 resultados</h1>
-    <span class="sub" id="results-label">Função</span>
-  </div>
-
-      
-  <section class="header-options">
+  <div id="header-lvl1">
     <div class="row">
-      <div class="span6">
-        <div class="inline-search">
+      <div class="span12">
 
-  <form method="get" action="/index.php/function/browse">
+        <ul id="header-nav" class="nav nav-pills">
 
-    
-    
-    <div class="input-prepend input-append">
+        <li><a href="/" title="Início">Início</a></li>
 
-      
-              <input type="text" name="subquery" placeholder="Pesquisa função">
-      
-      <div class="btn-group">
-        <button class="btn" type="submit">
-          <i class="fa fa-search"></i>
-        </button>
+                                        <li><a href="https://arquivoteca.tst.jus.br/index.php/function/browse?sf_culture=en&amp;limit=10&amp;sort=alphabetic" title="English">English</a></li>
+              
+                        <li><a href="https://arquivoteca.tst.jus.br/index.php/user/login" title="Entrar">Entrar</a></li>
+          
+        </ul>
+
       </div>
-
     </div>
+  </div>
 
-  </form>
+  <div id="header-lvl2">
+    <div class="row">
 
-</div>
-      </div>
-      <div class="span6">
-        <div id="sort-header">
-
-  <div class="sort-options">
-
-    <label>Ordenar por:</label>
-
-    <div class="dropdown">
-
-      <div class="dropdown-selected">
-
-                          <span>Alfabética</span>
-                  
+      <div id="logo-and-name" class="span6">
+          <h1><a rel="home" href="http://arquivoteca.tst.jus.br" title=""><img alt="TST" src="https://arquivoteca.tst.jus.br/plugins/arTstPlugin/images/logo.png"></a></h1>
       </div>
 
-      <ul class="dropdown-options">
+      <div id="header-search" class="span6">
+        <div id="search-form-wrapper">
 
-        <span class="pointer"></span>
+<form action="https://arquivoteca.tst.jus.br/index.php/informationobject/browse" data-autocomplete="https://arquivoteca.tst.jus.br/index.php/search/autocomplete">
 
-                  <li>
-                        <a href="https://arquivoteca.tst.jus.br/index.php/function/browse?sort=lastUpdated&amp;limit=10" data-order="lastUpdated">
-              <span>Mais recente</span>
-            </a>
+  <input type="hidden" name="topLod" value="0">
+
+  <div class="input-append">
+
+            <input type="text" name="query" value="" placeholder="Pesquisar">
+    
+    <div class="btn-group">
+      <button class="btn dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+                        <ul class="dropdown-menu pull-right">
+                                                                <li>
+                <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse">
+                                        <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-archival.png">                                        Descrições arquivísticas                  </a>
+              </li>
+                            <li>
+                <a href="https://arquivoteca.tst.jus.br/index.php/actor/browse">
+                                        <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-people.png">                                        Registros de autoridade                  </a>
+              </li>
+                            <li>
+                <a href="https://arquivoteca.tst.jus.br/index.php/repository/browse">
+                                        <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-institutions.png">                                        Instituições arquivísticas                  </a>
+              </li>
+                            <li>
+                <a href="https://arquivoteca.tst.jus.br/index.php/function/browse">
+                                        <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-functions.png">                                        Funções                  </a>
+              </li>
+                            <li>
+                <a href="https://arquivoteca.tst.jus.br/index.php/taxonomy/browse/id/35">
+                                        <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-subjects.png">                                        Assuntos                  </a>
+              </li>
+                            <li>
+                <a href="https://arquivoteca.tst.jus.br/index.php/taxonomy/browse/id/42">
+                                        <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-places.png">                                        Locais                  </a>
+              </li>
+                            <li>
+                <a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse">
+                                        <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-media.png">                                        Objetos digitais                  </a>
+              </li>
+                                    <li class="divider"></li>
+          <li class="advanced-search">
+            <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse?showAdvanced=1&amp;topLod=0">
+              <i class="icon-zoom-in"></i>
+              Pesquisa avançada              </a>
           </li>
-                  <li>
-                        <a href="https://arquivoteca.tst.jus.br/index.php/function/browse?sort=identifier&amp;limit=10" data-order="identifier">
-              <span>Identificador</span>
-            </a>
-          </li>
-        
-      </ul>
+        </ul>
+                      </div>
 
+  </div>
+
+  <div id="search-realm" class="search-popover">
+
+    
+      <div>
+        <label>
+                        <input name="repos" type="radio" value="" checked="checked" data-placeholder="Pesquisar">
+                      Pesquisa global          </label>
+      </div>
+
+      
+      
+    
+    <div class="search-realm-advanced">
+      <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse?showAdvanced=1&amp;topLod=0">
+        Pesquisa avançada&nbsp;»
+      </a>
     </div>
 
   </div>
 
+</form>
+
 </div>
       </div>
-    </div>
-  </section>
-
-
-        <table class="sticky-header" style="position: fixed; top: 0px; width: 723px; left: 69.5px; visibility: hidden;"><thead class="tableheader-processed" style="text-emphasis: NaNcss;">
-      <tr>
-        <th style="width: 384px;">
-          Nome        </th>
-                  <th style="width: 305px;">
-            Tipo          </th>
-              </tr>
-    </thead></table><table class="table table-bordered sticky-enabled sticky-table">
-    <thead class="tableheader-processed">
-      <tr>
-        <th>
-          Nome        </th>
-                  <th>
-            Tipo          </th>
-              </tr>
-    </thead><tbody>
-
-      
-    </tbody>
-  </table>
-
-      
-  
-  
 
     </div>
+  </div>
+
+</div>
+
+</div>
+
+  
+  <div id="wrapper" class="container" role="main">
 
     
-    <footer>
+
+      <div class="multiline-header">
+  <img alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-functions.png">    <h1 aria-describedby="results-label">Mostrando 0 resultados</h1>
+  <span class="sub" id="results-label">Função</span>
+</div>
+
+    
+<section class="header-options">
+  <div class="row">
+    <div class="span6">
+      <div class="inline-search">
+
+<form method="get" action="/index.php/function/browse">
 
   
   
-  <div id="print-date">
-    Impressão: 2019-01-10  </div>
+  <div class="input-prepend input-append">
+
+    
+            <input type="text" name="subquery" placeholder="Pesquisa função">
+    
+    <div class="btn-group">
+      <button class="btn" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+  </div>
+
+</form>
+
+</div>
+    </div>
+    <div class="span6">
+      <div id="sort-header">
+
+<div class="sort-options">
+
+  <label>Ordenar por:</label>
+
+  <div class="dropdown">
+
+    <div class="dropdown-selected">
+
+                        <span>Alfabética</span>
+                
+    </div>
+
+    <ul class="dropdown-options">
+
+      <span class="pointer"></span>
+
+                <li>
+                      <a href="https://arquivoteca.tst.jus.br/index.php/function/browse?sort=lastUpdated&amp;limit=10" data-order="lastUpdated">
+            <span>Mais recente</span>
+          </a>
+        </li>
+                <li>
+                      <a href="https://arquivoteca.tst.jus.br/index.php/function/browse?sort=identifier&amp;limit=10" data-order="identifier">
+            <span>Identificador</span>
+          </a>
+        </li>
+      
+    </ul>
+
+  </div>
+
+</div>
+
+</div>
+    </div>
+  </div>
+</section>
+
+
+      <table class="sticky-header" style="position: fixed; top: 0px; width: 1169px; left: 135px; visibility: hidden;"><thead class="tableheader-processed" style="">
+    <tr>
+      <th style="width: 632px;">
+        Nome        </th>
+                <th style="width: 503px;">
+          Tipo          </th>
+            </tr>
+  </thead></table><table class="table table-bordered sticky-enabled sticky-table">
+  <thead class="tableheader-processed">
+    <tr>
+      <th>
+        Nome        </th>
+                <th>
+          Tipo          </th>
+            </tr>
+  </thead><tbody>
+
+    
+  </tbody>
+</table>
+
+    
+
+
+
+  </div>
+
+  
+  <footer>
+
+
+
+<div id="print-date">
+  Impressão: 2019-01-15  </div>
 
 </footer>
 
 
-  
+
 
 </body></html>
