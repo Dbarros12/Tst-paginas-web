@@ -47,18 +47,92 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
 </script></head>
 
 <style>
-.fa-remove:before, .fa-close, .fa-times {
-    content: "\f00d";
+ 
+      h1, h2, h3, h4, h5, h6, .sidebar-widget>div, #action-icons i, #action-icons a, #action-icons a:hover i, #left-column a, #right-column a, .breadcrumb a, .breadcrumb span, #sort-header label, #sort-header .dropdown-selected:after, #facets .facet-header p, #facets .facet-header p:after, #facets .facet-header p:hover, #facets .open .facet-header p, #facets .open .facet-header p:after, #facets .facet-body li a, .nav-pills a, .nav-pills .active a, .result-count, #sort-header .dropdown-selected span, #sidebar li a, #context-menu li a, #advanced-search-filters, #context-menu a, #context-menu #primary-contact, #context-menu #opening-times, #context-menu #physical-objects, .list-menu .more a {
+        color: #0a0a0a;
+    }
+      
+    .pagination ul>li>a:hover, .pagination ul>.active>a, .pagination ul>.active>span, .sidebar-widget a, #facets .facet-body li.active a, #facets .facet-header p:hover:after {
+        color: #0366ff;
+    }
+    
+    .btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
+        font-size: 13px;
+    }
+    .input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child>.dropdown-toggle {
+        -webkit-border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0;
+        padding-bottom: 11px;
+    }
+    #search-form-wrapper .dropdown-menu {
+        text-align: left;
+        border: 1px solid #333;
+        -webkit-box-shadow: 2px 2px 0 rgba(255,255,255,0.5), -2px 2px 0 rgba(255,255,255,0.5), -2px -2px 0 rgba(255,255,255,0.5), 2px -2px 0 rgba(255,255,255,0.5);
+        -moz-box-shadow: 2px 2px 0 rgba(255,255,255,0.5),-2px 2px 0 rgba(255,255,255,0.5),-2px -2px 0 rgba(255,255,255,0.5),2px -2px 0 rgba(255,255,255,0.5);
+        box-shadow: 3px 3px 0 rgba(21, 20, 20, 0.5), -2px 2px 0 rgba(255,255,255,0.5), -2px -2px 0 rgba(255,255,255,0.5), 2px -2px 0 rgba(245, 237, 237, 0.5);
+    }
+    select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+        display: block;
+        width: 100%;
+        min-height: 29px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child {
+        margin-left: 1px;
+        -webkit-border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0;
+    }
+    .inline-search [type=text], .inline-search .btn {
+        background-color: rgb(153, 153, 153);
+        border-color: #2726266b;
+        box-shadow: none;
+        color: #060606;
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 148px;
+        padding: 5px 7px;
+        margin: 3px 0px 7px;
+        list-style: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0,0,0,0.2);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 9px;
+    }
+    #search-form-wrapper input[type=text], #search-form-wrapper .btn-group, #search-form-wrapper .btn {
+        border-color: #5f5c5c;
+       
+    }
+
+    .search-result.media-summary {
+    color: #0366ff;
+    font-size: 16px;
 }
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.search-result .result-details li.reference-code {
+    color: #f60000;
 }
-</style>
+.search-filter {
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.27);
+}
+      </style>
+
+
   <body class="yui-skin-sam informationobject browse">
 
     

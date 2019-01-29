@@ -1,0 +1,491 @@
+<html lang="pt_BR" dir="ltr" class="js js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <meta name="title" content="Arquivoteca Digital do TST">
+<meta name="description" content="Arquivoteca Digital - A informação ao seu alcance">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Arquivoteca Digital do TST</title>
+    <link rel="shortcut icon" href="https://arquivoteca.tst.jus.br/favicon.ico">
+    <link media="all" href="https://arquivoteca.tst.jus.br/plugins/arTstPlugin/css/min.css" rel="stylesheet" type="text/css">
+           
+    
+    <!--BIBLIOTECA FONT-AWESOME-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    
+    
+    <script src="https://arquivoteca.tst.jus.br/vendor/jquery.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/plugins/sfDrupalPlugin/vendor/drupal/misc/drupal.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/yui/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/yui/element/element-min.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/yui/button/button-min.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/yui/container/container_core-min.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/yui/menu/menu-min.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/modernizr.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/jquery-ui.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/jquery.ui.resizable.min.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/jquery.expander.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/jquery.masonry.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/jquery.imagesloaded.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/URI.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/vendor/meetselva/attrchange.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/js/qubit.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/js/treeView.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/js/clipboard.js" type="text/javascript"></script>
+<script src="https://arquivoteca.tst.jus.br/js/dominion.js" type="text/javascript"></script>
+  <script type="text/javascript">
+//<![CDATA[
+jQuery.extend(Qubit, {"relativeUrlRoot":""});
+//]]>
+</script></head>
+  <body class="yui-skin-sam digitalobject browse">
+
+    <style>
+      h1, h2, h3, h4, h5, h6, .sidebar-widget>div, #action-icons i, #action-icons a, #action-icons a:hover i, #left-column a, #right-column a, .breadcrumb a, .breadcrumb span, #sort-header label, #sort-header .dropdown-selected:after, #facets .facet-header p, #facets .facet-header p:after, #facets .facet-header p:hover, #facets .open .facet-header p, #facets .open .facet-header p:after, #facets .facet-body li a, .nav-pills a, .nav-pills .active a, .result-count, #sort-header .dropdown-selected span, #sidebar li a, #context-menu li a, #advanced-search-filters, #context-menu a, #context-menu #primary-contact, #context-menu #opening-times, #context-menu #physical-objects, .list-menu .more a {
+        color: #0a0a0a;
+    }
+      
+    .pagination ul>li>a:hover, .pagination ul>.active>a, .pagination ul>.active>span, .sidebar-widget a, #facets .facet-body li.active a, #facets .facet-header p:hover:after {
+        color: #0366ff;
+    }
+    
+    .btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
+        font-size: 12px;
+    }
+    .input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child>.dropdown-toggle {
+        -webkit-border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0;
+        padding-bottom: 11px;
+    }
+    #search-form-wrapper .dropdown-menu {
+        text-align: left;
+        border: 1px solid #333;
+        -webkit-box-shadow: 2px 2px 0 rgba(255,255,255,0.5), -2px 2px 0 rgba(255,255,255,0.5), -2px -2px 0 rgba(255,255,255,0.5), 2px -2px 0 rgba(255,255,255,0.5);
+        -moz-box-shadow: 2px 2px 0 rgba(255,255,255,0.5),-2px 2px 0 rgba(255,255,255,0.5),-2px -2px 0 rgba(255,255,255,0.5),2px -2px 0 rgba(255,255,255,0.5);
+        box-shadow: 3px 3px 0 rgba(21, 20, 20, 0.5), -2px 2px 0 rgba(255,255,255,0.5), -2px -2px 0 rgba(255,255,255,0.5), 2px -2px 0 rgba(245, 237, 237, 0.5);
+    }
+    select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+        display: block;
+        width: 100%;
+        min-height: 29px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child {
+        margin-left: 1px;
+        -webkit-border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0;
+    }
+    .inline-search [type=text], .inline-search .btn {
+        background-color: rgb(153, 153, 153);
+        border-color: #2726266b;
+        box-shadow: none;
+        color: #060606;
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 148px;
+        padding: 5px 7px;
+        margin: 3px 0px 7px;
+        list-style: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0,0,0,0.2);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 9px;
+    }
+    #search-form-wrapper input[type=text], #search-form-wrapper .btn-group, #search-form-wrapper .btn {
+        border-color: #5f5c5c;
+      
+    }
+    
+    </style>
+
+
+<div id="header">
+  <div class="container">
+
+    <div id="header-lvl1">
+      <div class="row">
+        <div class="span12">
+
+          <ul id="header-nav" class="nav nav-pills">
+
+      		<li><a href="/" title="Início">Início</a></li>
+
+                                          <li><a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?sf_culture=en&amp;sort=alphabetic" title="English">English</a></li>
+                
+                          <li><a href="https://arquivoteca.tst.jus.br/index.php/user/login" title="Entrar">Entrar</a></li>
+            
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="header-lvl2">
+      <div class="row">
+
+        <div id="logo-and-name" class="span6">
+            <h1><a rel="home" href="http://arquivoteca.tst.jus.br" title=""><img alt="TST" src="https://arquivoteca.tst.jus.br/plugins/arTstPlugin/images/logo.png"></a></h1>
+        </div>
+
+        <div id="header-search" class="span6">
+          <div id="search-form-wrapper">
+
+  <form action="/index.php/informationobject/browse" data-autocomplete="/index.php/search/autocomplete">
+
+    <input type="hidden" name="topLod" value="0">
+
+    <div class="input-append">
+
+              <input type="text" name="query" value="" placeholder="Pesquisar">
+      
+      <div class="btn-group">
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+                          <ul class="dropdown-menu pull-right">
+                                                                  <li>
+                  <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse">
+                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-archival.png">                                        Descrições arquivísticas                  </a>
+                </li>
+                              <li>
+                  <a href="https://arquivoteca.tst.jus.br/index.php/actor/browse">
+                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-people.png">                                        Registros de autoridade                  </a>
+                </li>
+                              <li>
+                  <a href="https://arquivoteca.tst.jus.br/index.php/repository/browse">
+                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-institutions.png">                                        Instituições arquivísticas                  </a>
+                </li>
+                              <li>
+                  <a href="https://arquivoteca.tst.jus.br/index.php/function/browse">
+                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-functions.png">                                        Funções                  </a>
+                </li>
+                              <li>
+                  <a href="https://arquivoteca.tst.jus.br/index.php/taxonomy/browse/id/35">
+                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-subjects.png">                                        Assuntos                  </a>
+                </li>
+                              <li>
+                  <a href="https://arquivoteca.tst.jus.br/index.php/taxonomy/browse/id/42">
+                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-places.png">                                        Locais                  </a>
+                </li>
+                              <li>
+                  <a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse">
+                                          <img width="42" height="42" alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-media.png">                                        Objetos digitais                  </a>
+                </li>
+                                      <li class="divider"></li>
+            <li class="advanced-search">
+              <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse?showAdvanced=1&amp;topLod=0">
+                <i class="icon-zoom-in"></i>
+                Pesquisa avançada              </a>
+            </li>
+          </ul>
+                </div>
+
+    </div>
+
+    <div id="search-realm" class="search-popover">
+
+      
+        <div>
+          <label>
+                          <input name="repos" type="radio" value="" checked="checked" data-placeholder="Pesquisar">
+                        Pesquisa global          </label>
+        </div>
+
+        
+        
+      
+      <div class="search-realm-advanced">
+        <a href="https://arquivoteca.tst.jus.br/index.php/informationobject/browse?showAdvanced=1&amp;topLod=0">
+          Pesquisa avançada&nbsp;»
+        </a>
+      </div>
+
+    </div>
+
+  </form>
+
+</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+    <div role="main">
+
+      
+      
+
+              <div class="container-fluid">
+          
+
+<div class="row-fluid">
+  <div class="span6">
+
+    <div class="multiline-header">
+      <img alt="" src="https://arquivoteca.tst.jus.br/images/icons-large/icon-media.png">      <h1 aria-describedby="results-label">Mostrando 956 resultados</h1>
+      <span class="sub" id="results-label">Objeto digital</span>
+    </div>
+
+  </div>
+  <div class="span6">
+
+    <div id="sort-header" class="shared">
+
+  <div class="sort-options">
+
+    <label>Ordenar por:</label>
+
+    <div class="dropdown">
+
+      <div class="dropdown-selected">
+
+                          <span>Alfabético (título)</span>
+                  
+      </div>
+
+      <ul class="dropdown-options">
+
+        <span class="pointer"></span>
+
+                  <li>
+                        <a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?sort=identifier" data-order="identifier">
+              <span>Alfabético (identificador)</span>
+            </a>
+          </li>
+                  <li>
+                        <a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?sort=lastUpdated" data-order="lastUpdated">
+              <span>Mais recente</span>
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+    <div class="header-facets">
+      <div class="btn-group top-facet">
+
+  <a class="btn active" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?sort=alphabetic" title="Todos">Todos</a>
+  
+    
+            
+      <a class="btn" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?mediatypes=137&amp;sort=alphabetic" title="Texto956">Texto<span class="badge">956</span></a>
+    
+  
+</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+
+    <section class="header-options">
+
+      
+    </section>
+
+  </div>
+</div>
+
+<section class="masonry centered" style="position: relative; height: 862px; width: 1275px;">
+          <div class="brick masonry-brick" style="position: absolute; top: 0px; left: 0px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-16632-1936-reclamante-floriano-candido-de-viveiros-pinto-reclamada-companhia-de-navegacao-lloyd-brasileiro-relator-godoy" title=""><img alt="Conselho Nacional de Trabalho - Reclamação Trabalhista nº 16632/1936." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/d/4/9/d4975f98018b744c210ecb3f561cca074c3ce37ff50a75430ab504a399f514f6/3-CNT_16632-1936_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional de Trabalho - Reclamação Trabalhista nº 16632/1936.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 0px; left: 258px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10459-1935-reclamante-franklin-marchand-bittencourt-representado-pelo-departamento-nacional-do-trabalho-reclamado-banco-portuguez-do-brasil-relator-nao-identificado" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº  10459/1935." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/9/1/d/91d96512ae4b89607e4de5a0faca7e3c444e85dcd3afd5e99573552afcac9542/CNT__10459-1935_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº  10459/1935.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 0px; left: 516px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-5297-1937-reclamante-estrada-de-ferro-sorocabana-reclamado-antonio-caserta-relator-manoel-tiburcio" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº  5297/1937." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/3/8/5/385f03d9b53ace02d9c4da2042555e45f5f6894aeeb227bea1bfa43178a88ed5/02_-_CNT_5297-1937_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº  5297/1937.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 0px; left: 774px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10075-1937-reclamante-estrada-de-ferro-sorocabana-reclamado-jose-barbosa-relator-moreira-de-azevedo" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10075/1937." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/5/0/3/503cc5855308b8f5671b8707e995746aed51aab89eb7e1cb20f2560363163fcd/3-CNT_10075-1937_-__EM_ANEXO_6317-1935_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10075/1937.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 0px; left: 1032px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10082-1934-reclamante-estrada-de-ferro-de-braganca-reclamado-raymundo-pinto-de-almeida-relator-gualter-jose-ferreira" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10082/1934." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/5/9/1/591983dea1af67a69896da51194723baaecc14dc35041505815ae9434944d020/5-CNT_10082-1934-_M___05_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10082/1934.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 431px; left: 0px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10095-1934-reclamante-joao-alventino-de-souza-reclamada-companhia-linha-circular-de-carris-da-baia-relator-nao-identificado-escrita-ilegivel" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10095/1934." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/4/a/c/4acae1a1e9da0ebf29827d87d23db69a2553b70f3d22becdd09adf9d392f3a94/6-CNT_10095-1934-_M___06_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10095/1934.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 431px; left: 258px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10106-1945-reclamante-eduardo-machado-reclamado-banco-do-estado-de-sao-paulo-relator-nao-identificado" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10106/1945." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/8/c/2/8c23088688a2c4eec66e3a82f5296c288055bcb59354bea3a4f414812ce5afbd/5-CNT_10106-1945_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10106/1945.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 431px; left: 516px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10119-1933-reclamante-serafim-peres-rodrigues-reclamada-the-rio-de-janeiro-tramway-light-power-company-ltda-relator-arthur-bastos" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10119/1933." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/a/c/4/ac4fbc516bd3334f809f3858839447be8cddb14414d1a74685eba5d50293a3a2/3-CNT_10_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10119/1933.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 431px; left: 774px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10126-1936-reclamante-companhia-de-navegacao-lloyd-brasileiro-reclamado-annibal-de-souza-rezende-relator-smith-vasconcellos" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10126/1936." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/1/f/6/1f666d51a412fd197b6fc3d860fc0d353b95e218c0935023da0f4e755cd9ffda/4-CNT_10126-1936_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10126/1936.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+          <div class="brick masonry-brick" style="position: absolute; top: 431px; left: 1032px;">
+      <div class="preview">
+                  <a href="https://arquivoteca.tst.jus.br/index.php/reclamacao-trabalhista-no-10193-1934-reclamante-alberto-augusto-nogueira-reclamada-companhia-forca-e-luz-minas-sul-relator-humberto-smith-de-vasconcellos" title=""><img alt="Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10193/1934." src="https://arquivoteca.tst.jus.br/uploads/r/tribunal-superior-do-trabalho/a/6/5/a6505319c9cfc72c5f3e08e76ce98986aa420623cbf665071492e3c6b6640e41/1-CNT_10193-1934-_M___01_142.jpg"></a>              </div>
+      <p class="description">Conselho Nacional do Trabalho - Reclamação Trabalhista nº 10193/1934.</p>
+      <div class="bottom">
+        <p>
+                        BR DF TST. CNT AF DIS                  </p>
+      </div>
+    </div>
+  </section>
+
+<section>
+  
+  <section>
+
+    <div class="result-count">
+              Resultados 1 até 10 de 956          </div>
+
+    <div class="visible-phone">
+      <div class="pager">
+        <ul>
+
+          
+                      <li class="next">
+              <a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=2&amp;sort=alphabetic" title="Próximo »">Próximo »</a>            </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="hidden-phone">
+      <div class="pagination pagination-centered">
+        <ul>
+
+          
+          
+          
+            
+                              <li class="active"><span>1</span></li>
+              
+                              
+            
+                          <li><a title="Ir à página 2" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=2&amp;sort=alphabetic">2</a></li>
+            
+          
+            
+                          <li><a title="Ir à página 3" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=3&amp;sort=alphabetic">3</a></li>
+            
+          
+            
+                          <li><a title="Ir à página 4" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=4&amp;sort=alphabetic">4</a></li>
+            
+          
+            
+                          <li><a title="Ir à página 5" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=5&amp;sort=alphabetic">5</a></li>
+            
+          
+            
+                          <li><a title="Ir à página 6" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=6&amp;sort=alphabetic">6</a></li>
+            
+          
+            
+                          <li><a title="Ir à página 7" href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=7&amp;sort=alphabetic">7</a></li>
+            
+          
+                      <li class="dots"><span>...</span></li>
+            <li class="last">
+              <a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=96&amp;sort=alphabetic" title="96">96</a>            </li>
+          
+                      <li class="next">
+              <a href="https://arquivoteca.tst.jus.br/index.php/digitalobject/browse?page=2&amp;sort=alphabetic" title="Próximo »">Próximo »</a>            </li>
+          
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+</section>
+        </div>
+      
+      
+    </div>
+
+    <footer>
+
+  
+  
+  <div id="print-date">
+    Impressão: 2019-01-15  </div>
+
+</footer>
+
+
+  
+
+</body></html>
