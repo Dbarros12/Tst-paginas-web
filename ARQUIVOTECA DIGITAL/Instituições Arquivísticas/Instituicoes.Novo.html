@@ -34,11 +34,7 @@
 <script src="https://arquivoteca.tst.jus.br/plugins/sfDrupalPlugin/vendor/drupal/misc/tableheader.js" type="text/javascript"></script>
 <script src="https://arquivoteca.tst.jus.br/js/advancedRepositoryFilters.js" type="text/javascript"></script>
 <script src="https://arquivoteca.tst.jus.br/js/dominion.js" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-jQuery.extend(Qubit, {"relativeUrlRoot":""});
-//]]>
-</script></head>
+</head>
 <body class="yui-skin-sam repository browse jquery-once-1-processed">
 
   <style>
@@ -57,7 +53,8 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
     -webkit-border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;
     border-radius: 0 4px 4px 0;
-    padding-bottom: 11px;
+    padding-bottom: 7px;
+    padding-top: 8px;
 }
 #search-form-wrapper .dropdown-menu {
     text-align: left;
@@ -69,7 +66,7 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
     display: block;
     width: 100%;
-    min-height: 29px;
+    min-height: 30px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -80,12 +77,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     -moz-border-radius: 0 4px 4px 0;
     border-radius: 0 4px 4px 0;
 }
-.inline-search [type=text], .inline-search .btn {
-    background-color: rgb(153, 153, 153);
-    border-color: #2726266b;
-    box-shadow: none;
-    color: #f3f3f3;
-}
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -104,10 +96,14 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     -moz-border-radius: 6px;
     border-radius: 9px;
 }
-#search-form-wrapper input[type=text], #search-form-wrapper .btn-group, #search-form-wrapper .btn {
-    border-color: #5f5c5c;
- 
+
+.btn {
+    display: inline-block;
+    padding: 3.5px 12px;
+    margin-bottom: 0;
 }
+
+
   </style>
 
 
@@ -711,7 +707,11 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 </footer>
 
-
+<script type="text/javascript">
+  //<![CDATA[
+  jQuery.extend(Qubit, {"relativeUrlRoot":""});
+  //]]>
+  </script>
 
 
 </body></html>

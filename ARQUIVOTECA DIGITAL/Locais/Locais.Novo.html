@@ -55,11 +55,13 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
           font-size: 12px;
       }
       .input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child>.dropdown-toggle {
-          -webkit-border-radius: 0 4px 4px 0;
-          -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
-          padding-bottom: 12px;
-      }
+      -webkit-border-radius: 0 4px 4px 0;
+      -moz-border-radius: 0 4px 4px 0;
+      border-radius: 0 4px 4px 0;
+      padding-bottom: 7px;
+      padding-top: 8px;
+  }
+
       #search-form-wrapper .dropdown-menu {
           text-align: left;
           border: 1px solid #333;
@@ -81,12 +83,7 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
           -moz-border-radius: 0 4px 4px 0;
           border-radius: 0 4px 4px 0;
       }
-      .inline-search [type=text], .inline-search .btn {
-          background-color: rgb(153, 153, 153);
-          border-color: #2726266b;
-          box-shadow: none;
-          color: #060606;
-      }
+   
       .dropdown-menu {
           position: absolute;
           top: 100%;
@@ -105,10 +102,7 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
           -moz-border-radius: 6px;
           border-radius: 9px;
       }
-      #search-form-wrapper input[type=text], #search-form-wrapper .btn-group, #search-form-wrapper .btn {
-          border-color: #5f5c5c;
-        
-      }
+     
       .btn {
     display: inline-block;
     padding: 3px 12px;
@@ -117,7 +111,16 @@ jQuery.extend(Qubit, {"relativeUrlRoot":""});
     line-height: 21px;
     text-align: center;
       }
+      .inline-search [type=text], .inline-search .btn {
+    background-color: rgba(37, 37, 37, 0.38);
+    border-color: #00000052;
+    box-shadow: none;
+    color: #0c0c0c;
+}
 
+.btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
+    font-size: 12.5px;
+}
     </style>
 
 
